@@ -72,7 +72,7 @@ int main() {
     TCHAR browserProcess[32];
     TCHAR WheelRoll[8];
     TCHAR sleep[8];
-    TCHAR sleepUpdate[8];
+    //TCHAR sleepUpdate[8];
     TCHAR drawDelay[8];
     TCHAR UpdateButtonX[8];
     TCHAR UpdateButtonY[8];
@@ -102,8 +102,8 @@ int main() {
     if (GetPrivateProfileString(LPCTSTR("MainSettings"), LPCTSTR("SleepTime"), LPCTSTR(""), sleep, 8, ini.c_str()) == 0)
         return e_exit("INI attribute SleepTime in MainSettings not found!");
 
-    if (GetPrivateProfileString(LPCTSTR("MainSettings"), LPCTSTR("SleepToUpdateTime"), LPCTSTR(""), sleepUpdate, 8, ini.c_str()) == 0)
-        return e_exit("INI attribute SleepToUpdateTime in MainSettings not found!");
+    //if (GetPrivateProfileString(LPCTSTR("MainSettings"), LPCTSTR("SleepToUpdateTime"), LPCTSTR(""), sleepUpdate, 8, ini.c_str()) == 0)
+        //return e_exit("INI attribute SleepToUpdateTime in MainSettings not found!");
 
     if (GetPrivateProfileString(LPCTSTR("MainSettings"), LPCTSTR("DrawDelayTime"), LPCTSTR(""), drawDelay, 8, ini.c_str()) == 0)
         return e_exit("INI attribute DrawDelayTime in MainSettings not found!");
